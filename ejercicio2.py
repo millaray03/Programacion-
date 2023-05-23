@@ -1,13 +1,22 @@
-#definir variables 
+ 
+a = [10,9,12,15,18]
+b = [21,8,15,3,12]
 
-palabra_uno = (input("escriba la primera palabra:"))
-palabra_dos = (input("escriba la segunda palabra:"))
+print(a)
+print(b)
 
-if  len (palabra_uno) > len (palabra_dos) : 
-    print("la palabra uno tiene mas caracteres",palabra_uno)
+lista = a + b
+print(lista)
 
-else:
-    print("la palabra dos tiene menos caracteres",palabra_dos)  
+lista.insert (2,'30')
+print(lista) 
 
+lista = sorted (a + b)
+print(lista)
 
+lista.insert (10,'4, 5, 6')
+print(lista) 
+
+media = sum(lista) + len (lista)//2 
+print(media) 
 
